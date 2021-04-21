@@ -1,0 +1,31 @@
+/* An app to allow users to test their typing speed by specifying the number of seconds they can use to complete it
+ Developer: shininglite2012@gmail.com/08148202358/Oluwakemi Omoyeni
+ Date Created: 23/12/2020
+ Date Modified: 02/01/2021
+*/
+
+.heading{
+    background-color: #ff00f1;
+    color: white;
+}
+.guessing-environ img{
+    /* margin-top: 150px; */
+    width: 50%;
+    height: 150px;
+    /* border-radius: 40px; */
+}
+.typing-environ input{
+    /* width: 15%; */
+    border-radius: 8px;
+    border-color: #ff00f1;
+    box-shadow: none !important;
+}
+.generate{
+    width: 50% !important;
+    background-color: #ff00f1;
+    border: none !important;
+    text-align: center;
+}
+.typing-environ input, .generate:focus{
+    outline: none !important;
+}

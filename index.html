@@ -1,0 +1,69 @@
+ <!-- An app to allow users to test their typing speed by specifying the number of seconds they can use to complete it
+ Developer: shininglite2012@gmail.com/08148202358/Oluwakemi Omoyeni
+ Date Created: 30/12/2020
+ Date Modified: 02/01/2021
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-fluid heading">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center">Mini Marvis</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 typing-environ">
+        <div class="row">
+            <div class="col">
+                <form action="">
+                    <div class="form-group">
+                       
+                        <input type="text" class="form-control" id="user-text" aria-describedby="userText" placeholder="input the word you wish to type here">
+                      
+                      </div>
+                      <div class="form-group">
+                       
+                        <input type="number" class="form-control" id="user-time" aria-describedby="userText" placeholder="How many seconds can you use to type it?" pattern="[0-9]+">
+                        <small style="display: none;" id="error-msg" class="mt-2">Both fields is empty!</small>
+                      </div>
+                      
+                      <input type="button" value="START" class="generate" id="start-game">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <p ></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col offset-1">
+                <div class="card text-dark mb-3" style="max-width: 20rem; display: none;" id="card">
+                    <div class="card-header" style="background-color: #ff00f1;">How fast can you type this?</div>
+                    <div class="card-body">
+                      <h5 class="card-title"><p id="text"></p></h5>
+                      <p class="card-text" id="time"></p>
+                      <form action="" class="typing-environ">
+                        <input type="text" class="form-control" id="typing-text" aria-describedby="userText">
+                        <input type="button" value="New Game" class="generate mt-3" id="new-game" style="display: none;">
+                      </form>
+                      <p class="card-text mt-3" id="result" style="display: none;"></p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
